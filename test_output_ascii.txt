@@ -1,0 +1,52 @@
+[dotenv@17.2.3] injecting env (4) from .env -- tip: ???? encrypt with Dotenvx: https://dotenvx.com
+
+Running 1 test using 1 worker
+
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ???? add observability to secrets: https://dotenvx.com/ops
+???????  Cleared all users
+
+???? Starting Dmoney API Automation...
+
+???? Authenticating...
+???? Successfully logged in as: salman@roadtocareer.net
+
+???? Step 1: Creating 2 customers...
+??? Saved Customer: Ellen Goodwin Sr. (01500275898)
+??? Created Customer: Ellen Goodwin Sr. | Phone: 01500275898
+??? Saved Customer: Audrey Williamson (01500410172)
+??? Created Customer: Audrey Williamson | Phone: 01500410172
+
+???? Step 2: Creating 1 agent...
+??? Saved Agent: Carl Kilback (01600037272)
+??? Created Agent: Carl Kilback | Phone: 01600037272
+
+???? Step 3: Creating 1 merchant...
+??? Saved Merchant: Preston Feest (01700537766)
+??? Created Merchant: Preston Feest | Phone: 01700537766
+
+???? Step 4: System ??? Agent (2000 TK)...
+???? Deposit: SYSTEM ??? 01600037272 | Amount: 2000 TK
+
+???? Step 5: Agent ??? Customer1 Deposit (1500 TK)...
+???? Deposit: 01600037272 ??? 01500275898 | Amount: 1500 TK
+
+???? Step 6: Customer1 ??? Agent Withdraw (500 TK)...
+???? Withdraw: 01500275898 ??? 01600037272 | Amount: 500 TK
+
+???? Step 7: Customer1 ??? Customer2 Send Money (500 TK)...
+???? Send Money: 01500275898 ??? 01500410172 | Amount: 500 TK
+
+???? Step 8: Customer2 ??? Merchant Payment (100 TK)...
+???? Payment: 01500410172 ??? 01700537766 | Amount: 100 TK
+
+???? Step 9: Checking Customer2 balance...
+???? Balance for 01500410172: 395 TK
+
+??? Running final assertions...
+??? Customer2 balance verified: 395 TK (including 5 TK fee)
+
+???? All tests passed successfully!
+
+  ???  1 tests\dmoney.spec.ts:12:9 ??? Dmoney API Automation - Complete Transaction Flow ??? Complete Dmoney transaction flow with all requirements (6.2s)
+
+  1 passed (7.9s)
